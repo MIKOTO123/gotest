@@ -32,7 +32,7 @@ func test() {
 		h = iota //7,恢复计数
 		i        //8
 		_        //_只可意会
-		k        //9
+		k        //10
 	)
 	fmt.Println(a, b, c, d, e, f, g, h, i, k)
 }
