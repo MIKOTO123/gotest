@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/MIKOTO123/pikazocommonfunc"
 	"math"
 )
 
@@ -15,6 +16,8 @@ func main() {
 */
 func test2() {
 
+	pikazocommonfunc.PrintStartInFunc(3)
+	defer pikazocommonfunc.PrintEndInFunc(3)
 	fmt.Printf("%f\n", math.Pi)
 	fmt.Printf("%.2f\n", math.Pi)
 
@@ -36,6 +39,8 @@ func test2() {
 }
 
 func test1() {
+	pikazocommonfunc.PrintStartInFunc(3)
+	defer pikazocommonfunc.PrintEndInFunc(3)
 	name := "pikazo"
 	age := 20
 	b := true
