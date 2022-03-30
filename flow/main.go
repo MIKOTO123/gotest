@@ -8,6 +8,6 @@ func main() {
 	//testpkg.Iftest3()
 	//testpkg.Iftest4()
 
-	testpkg.ForRange3()
+	testpkg.Fortest5()
 
 }
