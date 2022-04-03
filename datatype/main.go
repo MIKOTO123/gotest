@@ -1,14 +1,16 @@
 package main
 
 import (
+	"datatype/testpkg"
 	"fmt"
 	"github.com/MIKOTO123/pikazocommonfunc"
 	"math"
 )
 
 func main() {
-	test1()
-	test2()
+	//testpkg.Assign()
+	testpkg.Assign()
+	//test2()
 }
 
 /**
@@ -36,21 +38,4 @@ func test2() {
 	fmt.Printf("%x \n", c) // ff
 	fmt.Printf("%X \n", c) // FF
 	fmt.Printf("%d \n", c) // 255 ,,,16进制的ff变成十进制就是255
-}
-
-func test1() {
-	pikazocommonfunc.PrintStartInFunc(3)
-	defer pikazocommonfunc.PrintEndInFunc(3)
-	name := "pikazo"
-	age := 20
-	b := true
-	p := &age
-	array := [...]int{1, 2, 3, 4} //数组是有固定长度的,
-	slice := []int{4, 5, 6, 7}
-	fmt.Printf("%T\n", name)
-	fmt.Printf("%T\n", age)
-	fmt.Printf("%T\n", b)
-	fmt.Printf("%T\n", p)
-	fmt.Printf("%T\n", array)
-	fmt.Printf("%T\n", slice)
 }
