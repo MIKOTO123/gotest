@@ -3,9 +3,12 @@ package testpkg
 import "fmt"
 
 type func1 func()
+type myint int     //最后打印类型的类型的时候是myint
+type inttype = int //最后打印类型的时候还是int
 
 var name string
 var age int
+var i myint
 var b bool
 var p *int
 var f1 float32
@@ -18,13 +21,14 @@ var ch1 chan int
 
 func Declare() {
 	//默认值
-	PrintValue(name, age, f1, f2, p, b, arr, slice, map1, func2, ch1)
+	PrintValue(name, age, i, f1, f2, p, b, arr, slice, map1, func2, ch1)
 
 }
 
 func Assign() {
 	name := "pikazo"
 	age := 20
+	i = 20
 	f1 := 3.14
 	f2 := 3.141592
 	b := true
@@ -35,7 +39,7 @@ func Assign() {
 	func2 := Assign
 	//ch1 <- 1 //写入通道,必须关闭否则会报错
 	//close(ch1)
-	PrintValue(name, age, f1, f2, p, b, arr, slice, map1, func2, ch1)
+	PrintValue(name, age, i, f1, f2, p, b, arr, slice, map1, func2, ch1)
 }
 
 func PrintValue(args ...interface{}) {
