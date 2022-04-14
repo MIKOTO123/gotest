@@ -4,5 +4,5 @@ import "goroutines/testpkg"
 
 func main() {
 
-	testpkg.GoTest()
+	testpkg.GoTestQuit()
 }
