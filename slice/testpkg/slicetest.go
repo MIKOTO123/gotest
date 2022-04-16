@@ -49,3 +49,11 @@ func RangeSlice() {
 		println(i, value)
 	}
 }
+
+func ByteSlice() {
+	//s1 := []byte{'a', 'b', 'c', 'd', 'e', 'f'}
+	s1 := []byte("abcdef") //这是一个特殊的方式,可以直接把字符串转换成byte
+	s2 := s1[2:5]
+	fmt.Printf("%v\n", s1)
+	fmt.Printf("%v\n", s2)
+}
