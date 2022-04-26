@@ -1,5 +1,7 @@
 package main
 
-func main() {
+import "mathtest/testpkg"
 
+func main() {
+	testpkg.TestMath2()
 }

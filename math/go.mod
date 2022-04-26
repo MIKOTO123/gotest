@@ -1,3 +1,3 @@
-module math
+module mathtest
 
 go 1.16
