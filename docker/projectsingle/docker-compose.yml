@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mywechat:
+    build: .. #使用当前目录的dockerfile
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/usr/src/myapp
+    tty: true #是否显示终端会卡主,所以运行的时候要dc up -d 在后台执行

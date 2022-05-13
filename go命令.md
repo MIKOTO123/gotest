@@ -1,6 +1,6 @@
 ```shell
 go run vartest_main.go #运行go进程,vartest_main.go里面必须是main包,要有main方法
-go build vartest_main.go #编译vartest_main.go到可执行文件
+go build -o smgui.exe vartest_main.go #编译vartest_main.go到可执行文件
 
 ```
 
