@@ -1,5 +1,8 @@
 package main
 
-func main() {
+import "mutextest/testpkg"
 
+func main() {
+	//testpkg.Mutexttest()
+	testpkg.TestRWmutex()
 }

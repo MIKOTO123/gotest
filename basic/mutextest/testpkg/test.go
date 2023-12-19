@@ -30,14 +30,16 @@ func sub() {
 	lock.Unlock()
 }
 func Mutexttest() {
-	for i := 0; i < 100; i++ {
+	fmt.Println("我到底什么时候开始执行")
+	for h := 0; h < 100; h++ {
 		wg.Add(1)
 		go add()
 		wg.Add(1)
 		go sub()
 	}
-
+	fmt.Println("可能在加减前打印.")
 	wg.Wait()
 
+	//上锁的话,最后这个结果i一定是100,如果不上锁,会出现脏读的情况,最后就不一定是100
 	fmt.Printf("end i: %v\n", i)
 }
